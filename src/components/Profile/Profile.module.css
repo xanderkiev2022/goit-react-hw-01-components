@@ -4,13 +4,7 @@
   /* box-shadow: */
   font-weight: 700;
   background-color: var(--primary-background-color);
-}
-
-.profile:hover,
-.profile:focus {
   cursor: pointer;
-  transition: color var(--animation-duration) var(--animation-timing-function);
-  transform: scale(1.1);
 }
 
 .description {
@@ -23,25 +17,24 @@
 .avatar {
   width: 100px;
   height: 100px;
-  border-radius: 30%;
-  box-shadow: var(--box-shadow);
+  border-radius: 50%;
   margin-bottom: 30px;
   background-color: #fff6b2;
 }
 
 .name {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
 .tag,
 .location {
-  margin: 10px;
+  margin: 5px;
   color: var(--secondary-text-color);
 }
 
-.statlist {
+.statList {
   display: flex;
   background: var(--secondary-background-color);
   padding: 0;
@@ -52,23 +45,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   width: calc(100% / 3);
   border: 1px solid var(--border-color);
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .statItem:not(:last-child) {
-  border-right: 2px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
 }
 
-.statlabel {
-  margin-bottom: 4px;
+.label {
+  margin-bottom: 5px;
   font-size: 18px;
   color: var(--secondary-text-color);
 }
 
 .quantity {
-  font-size: 18px;
-  color: var(--secondary-text-color);
+  font-size: 25px;
+  color: var(--main-text-color);
 }

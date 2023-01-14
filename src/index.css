@@ -1,11 +1,13 @@
 @import-normalize; /* bring in normalize.css styles */
 
 :root {
-  --primary-text-color: #2b2a2a;
-  --border-color: rgb(221, 221, 223);
-  --primary-background-color: #d6d8e0;
-  --secondary-text-color: #757575;
-  --secondary-background-color: #d9d9db;
+  --container-background-color: #e7ecf2;
+
+  --primary-text-color: #122236;
+  --border-color: rgb(221, 221, 221);
+  --primary-background-color: #ffffff;
+  --secondary-text-color: #9da9b4;
+  --secondary-background-color: #f3f6f9;
   --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   --animation-duration: 250ms;
   --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -18,4 +20,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+ul {
+  list-style-type: none;
 }
