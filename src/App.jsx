@@ -1,4 +1,5 @@
 import Profile from './components/Profile/Profile';
+import React from 'react';
 import user from './json/user.json';
 
 export const App = () => {
