@@ -8,25 +8,22 @@ export default function Statistics({ title, stats}) {
   <h2 className={css.title}>{title}</h2>
 
   <ul className={css.statList}>
-    <li className={css.statItem}>
-      <span className={css.label}>{stats.label}</span>
-      <span className={css.percentage}>{stats.persentage}</span>
-    </li>
-    <li className={css.statItem}>
-      <span className={css.label}>{stats.label}</span>
-      <span className={css.percentage}>{stats.persentage}</span>
-    </li>
-    <li className={css.statItem}>
-      <span className={css.label}>{stats.label}</span>
-      <span className={css.percentage}>{stats.persentage}</span>
-    </li>
-    <li className={css.statItem}>
-      <span className={css.label}>{stats.label}</span>
-      <span className={css.percentage}>{stats.persentage}</span>
-    </li>
+    {stats.map(stat => 
+    <li 
+    className={css.statItem} 
+    key={stat.id}
+    style={{backgroundColor: `${RandomColor()}` }}
+    >
+    <span className={css.label}>{stat.label}</span>
+    <span className={css.percentage}>{stat.percentage} %</span> </li>)}
   </ul>
 </section>
-  );
+);
+}
+
+const random = () => Math.floor(255 * Math.random());
+function RandomColor() {
+  return `rgb(${random()}, ${random()}, ${random()})`;
 }
 
 Statistics.propTypes = {
