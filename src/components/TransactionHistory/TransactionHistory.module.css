@@ -1,0 +1,29 @@
+.history {
+  margin: 50px auto 0;
+  width: 460px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--primary-background-color);
+  cursor: pointer;
+}
+
+.title {
+  padding: 10px;
+  background-color: #00bcd5;
+  color: var(--primary-background-color);
+  text-transform: uppercase;
+}
+.item {
+  width: 200px;
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+.item:first-letter {
+  text-transform: uppercase;
+}
+.row {
+  background: var(--primary-background-color);
+}
+.row:nth-child(2n) {
+  background: #dce1ec;
+}
