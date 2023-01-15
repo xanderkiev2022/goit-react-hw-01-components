@@ -45,6 +45,6 @@ function Transaction({ type, amount, currency }) {
 
 Transaction.propTypes = {
   type: PropTypes.string.isRequired,
-  amount: PropTypes.number.isRequired,
+  amount: PropTypes.string.isRequired,
   currency: PropTypes.string.isRequired,
 };
