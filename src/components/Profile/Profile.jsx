@@ -1,12 +1,5 @@
-// import React from 'react';
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
-
-// const Title = styled.h1`
-//   font-size: 1.5em;
-//   text-align: center;
-//   color: palevioletred;
-// `;
 
 export default function Profile({ username, tag, location, avatar, stats }) {
   return (
@@ -33,27 +26,6 @@ export default function Profile({ username, tag, location, avatar, stats }) {
         </li>
       </ul>
     </div>
-
-    // <div className={css.event}>
-    //   <h2 className={css.title}>{name}</h2>
-    //   <p className={css.info}>
-    //     <FaMapMarkerAlt className={css.icon} size={iconSize.sm} />
-    //     {location}
-    //   </p>
-    //   <p className={css.info}>
-    //     <FaUserAlt className={css.icon} size={iconSize.sm} />
-    //     {speaker}
-    //   </p>
-    //   <p className={css.info}>
-    //     <FaCalendarAlt className={css.icon} size={iconSize.sm} />
-    //     {formattedStart}
-    //   </p>
-    //   <p className={css.info}>
-    //     <FaClock className={css.icon} size={iconSize.sm} />
-    //     {duration}
-    //   </p>
-    //   <span className={`${css.chip} ${css[type]}`}>{type}</span>
-    // </div>
   );
 }
 
