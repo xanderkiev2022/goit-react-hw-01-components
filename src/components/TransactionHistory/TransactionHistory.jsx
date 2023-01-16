@@ -27,7 +27,7 @@ export default function TransactionHistory({ items }) {
 }
 
 TransactionHistory.propTypes = {
-  transactions: PropTypes.exact({
+  items: PropTypes.exact({
     id: PropTypes.string.isRequired,
   }),
 };
